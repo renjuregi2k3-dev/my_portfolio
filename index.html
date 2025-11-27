@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renju Regi - System Administrator</title>
+    <style>
+        :root {
+            --primary: #0f172a; /* Dark Blue Background */
+            --secondary: #1e293b; /* Card Background */
+            --accent: #38bdf8; /* Cyan/Tech Blue */
+            --text-light: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: var(--primary); color: var(--text-light); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* HEADER & HERO */
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a:hover { color: var(--accent); }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 70%);
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero span { color: var(--accent); }
+        .hero p { font-size: 1.2rem; color: var(--text-dim); max-width: 600px; margin-bottom: 30px; }
+        .btn {
+            padding: 12px 30px;
+            background: var(--accent);
+            color: var(--primary);
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .btn:hover { background: #fff; }
+
+        /* SECTIONS */
+        section { padding: 60px 10%; }
+        .section-title { font-size: 2rem; margin-bottom: 40px; border-left: 5px solid var(--accent); padding-left: 15px; }
+
+        /* EXPERIENCE & EDUCATION GRIDS */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        
+        .card {
+            background: var(--secondary);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card h3 { color: var(--accent); margin-bottom: 10px; }
+        .card .date { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 15px; display: block; }
+
+        /* SKILLS TAGS */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--accent);
+            font-size: 0.9rem;
+        }
+
+        /* PROJECTS LIST */
+        .project-item {
+            background: var(--secondary);
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--secondary);
+            border-top: 1px solid #334155;
+            color: var(--text-dim);
+        }
+        .contact-info p { margin: 5px 0; }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            section { padding: 40px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RENJU<span style="color:white">REGI</span></div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hi, I'm <span>Renju Regi</span></h1>
+        <p>System Administrator & IT Security Professional</p>
+        <p style="font-size: 1rem; margin-top: -20px;">Specializing in Linux, Windows Server, and Network Administration</p>
+        <br>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Professional Objective</h2>
+        <p>I intend to build a career as a System Administrator in a leading institution of hi-tech environment with committed and dedicated people. My goal is to explore my full potential and contribute effectively to the organization[cite: 3].</p>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>System Administrator</h3>
+                <span class="date">Aug 2024 - Present</span>
+                <p><strong>Pflege Career, Ernakulam</strong></p>
+                <p>Handling system administration tasks, user management, and IT support[cite: 5].</p>
+            </div>
+            <div class="card">
+                <h3>Professional IT Security</h3>
+                <span class="date">2024</span>
+                <p><strong>Enbridg, Thiruvala</strong></p>
+                <p>Specialized training in IT security protocols[cite: 7].</p>
+            </div>
+            <div class="card">
+                <h3>B.Sc Computer Science</h3>
+                <span class="date">2023</span>
+                <p><strong>MG University, Kottayam</strong></p>
+                <p>Graduated with a focus on Computer Science fundamentals[cite: 8].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Competency</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Operating Systems</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Kali Linux</span>
+                    <span class="skill-tag">AlmaLinux</span>
+                    <span class="skill-tag">Windows Server 2019</span>
+                    <span class="skill-tag">Windows 10</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Networking & Hardware</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">CCNA Knowledge</span>
+                    <span class="skill-tag">Cisco Packet Tracer</span>
+                    <span class="skill-tag">System Assembling</span>
+                    <span class="skill-tag">Virtual Trunking Protocol</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Development & DB</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Python (Basic)</span>
+                    <span class="skill-tag">C / C++</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">MySQL / SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects & Achievements</h2>
+        <div class="project-item">
+            <h3>Security Guard Management System</h3>
+            <p>Completed mini-project focused on management systems[cite: 36].</p>
+        </div>
+        <div class="project-item">
+            <h3>Flat Plus</h3>
+            <p>Final year major project[cite: 37].</p>
+        </div>
+        <div class="project-item">
+            <h3>Achievements</h3>
+            <ul style="padding-left: 20px; margin-top: 10px; list-style: disc;">
+                <li>NCC 'C' Certificate with B Grade [cite: 29]</li>
+                <li>Participated in All India Trekking Camp (Andhra Pradesh) [cite: 30]</li>
+                <li>Student Police Cadet Certificate (B Grade) [cite: 34]</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div style="text-align: center;">
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">Ready to hire a dedicated System Administrator?</p>
+            <div class="contact-info">
+                <p>📍 Vazhappallil (H), Kurunthar, Kuzhikkala P.O, 689644</p>
+                <p>📞 +91 7306029518</p>
+                <p>✉️ <a href="mailto:renjuregi2k3@gmail.com" style="color: var(--accent);">renjuregi2k3@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Renju Regi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
