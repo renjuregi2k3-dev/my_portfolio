@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renju Regi - System Administrator</title>
     <style>
+        /* Add this new CSS block */
+.profile-image-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile-img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover;
+    border: 4px solid var(--accent); /* Adds a tech border */
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+/* End of new CSS block */
         :root {
             --primary: #0f172a; /* Dark Blue Background */
             --secondary: #1e293b; /* Card Background */
@@ -134,9 +148,12 @@
     </section>
 
     <section id="about">
-        <h2 class="section-title">Professional Objective</h2>
-        <p>I intend to build a career as a System Administrator in a leading institution of hi-tech environment with committed and dedicated people. My goal is to explore my full potential and contribute effectively to the organization[cite: 3].</p>
-    </section>
+    <div class="profile-image-container">
+        <img src="profile.jpg" alt="Renju Regi Professional Headshot" class="profile-img">
+    </div>
+    <h2 class="section-title">Professional Objective</h2>
+    <p>I intend to build a career as a System Administrator in a leading institution of hi-tech environment...</p>
+</section>
 
     <section id="experience">
         <h2 class="section-title">Experience & Education</h2>
@@ -232,4 +249,5 @@
     </footer>
 
 </body>
+
 </html>
